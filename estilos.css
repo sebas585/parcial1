@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #555;
+}
+
+main {
+    width: 700px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+.portada {
+width: 100%;
+height: 180px;
+position: relative;
+overflow: hidden;
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.texto-portada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.texto-portada h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.texto-portada p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-portada button {
+    border: none;
+    background-color: #e74c3c;
+    color:  white;
+    padding: 8px 15px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.puntos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px o 25px;
+}
+
+.puntos span {
+    width: 5px;
+    height: 5px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.secciones {
+    text-align: center;
+    margin-bottom:  30px;
+}
+
+.secciones h2 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 7px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.servicio {
+width: 120px;
+height: 110px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.servicio1 {
+    background-color: #12b5b0;
+}
+
+.servicio2 {
+    background-color: #e67e00;
+}
+
+.servicio3 {
+    background-color: #168de2;
+}
+
+.servicio4 {
+    background-color: #00b84f;
+}
+
+.icono {
+    color: white;
+    font-size: 25px;
+}
+
+.portafolio {
+    margin-top: 5px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.foto {
+    width: 120px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 95%;
+    }
+    .servicios {
+        flex-wrap: wrap;
+    }
+    .servicio {
+        width: 45%;
+    }
+    .foto {
+        width: 45%;
+    }
+}
